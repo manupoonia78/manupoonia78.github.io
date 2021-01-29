@@ -1,5 +1,35 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600,600italic,700,700italic");
+:root {
+    --gray0: #f8f8f8;
+    --gray1: #dbe1e8;
+    --gray2: #b2becd;
+    --gray3: #6c7983;
+    --gray4: #454e56;
+    --gray5: #2a2e35;
+    --gray6: #12181b;
+    --blue: #0084a5;
+    --purple: #a82dd1;
+    --yellow: #fff565;
+}
+
+.light {
+    --bg: var(--gray0);
+    --bg-nav: linear-gradient(to right, var(--gray1), var(--gray3));
+    --bg-dropdown: var(--gray0);
+    --text: var(--gray3);
+    --border-color: var(--blue);
+    --bg-solar: var(--yellow);
+}
+
+.dark {
+    --bg: var(--gray5);
+    --bg-nav: linear-gradient(to right, var(--gray5), var(--gray6));
+    --bg-dropdown: var(--gray6);
+    --text: var(--gray0);
+    --border-color: var(--purple);
+    --bg-solar: var(--blue);
+}
 
 /*
 	Directive by HTML5 UP
@@ -22,11 +52,13 @@ section, summary, time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
+
 	font: inherit;
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
+
 	display: block;}
 
 body {
@@ -2707,6 +2739,8 @@ input, select, textarea {
 	#header {
 		background-attachment: scroll,							scroll,					fixed;
 		background-image: url("images/top-3200.svg"), url("images/overlay.png"), url("../../images/header.jpg");
+		
+
 		background-position: bottom center,					top left,				center center;
 		background-repeat: repeat-x,						repeat,					no-repeat;
 		background-size: 3200px 460px,					auto,					cover;
@@ -2763,17 +2797,18 @@ input, select, textarea {
 		}
 
 		#header .logo {
-			background: #4eb980;
+			background: #fff;
+			background-image: url("../../images/deno.png");
 			border-radius: 100%;
 			color: #ffffff;
 			cursor: default;
 			display: inline-block;
 			font-size: 2.25em;
-			height: 2.35em;
+			height: 5em;
 			line-height: 2.35em;
 			margin: 0 0 0.75em 0;
 			text-align: center;
-			width: 2.35em;
+			width: 5em;
 		}
 
 			#header .logo.fa-paper-plane-o:before {
@@ -2796,7 +2831,7 @@ input, select, textarea {
 
 	#footer {
 		background-attachment: scroll;
-		background-color: #4eb980;
+		background-color: #000;
 		background-image: url("images/bottom-3200.svg");
 		background-position: top center;
 		background-repeat: repeat-x;
@@ -3300,3 +3335,35 @@ input, select, textarea {
 				}
 
 	}
+
+	.skill {
+    border: 1px solid #a9a9a9;
+}
+
+.text-skill {
+    text-align: center;
+    font-size: 2rem;
+}
+.img-fluid{
+	width:150px;
+}
+.justify-content-around{
+	justify-content: space-around;
+}
+@media (min-width: 1200px)
+.container {
+    width: 70vw;
+}
+#themeToggler {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+#themeToggler i {
+    font-size: 1.2rem;
+}
