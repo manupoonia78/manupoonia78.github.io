@@ -2743,7 +2743,7 @@ input, select, textarea {
 
 		background-position: bottom center,					top left,				center center;
 		background-repeat: repeat-x,						repeat,					no-repeat;
-		background-size: contain;,					auto,					cover;
+		background-size: contain;
 		color: rgba(255, 255, 255, 0.8);
 		padding: 10em 0 20em 0;
 		position: relative;
@@ -2809,6 +2809,7 @@ input, select, textarea {
 			margin: 0 0 0.75em 0;
 			text-align: center;
 			width: 5em;
+			background-size: cover;
 		}
 
 			#header .logo.fa-paper-plane-o:before {
@@ -3058,7 +3059,7 @@ input, select, textarea {
 			#header {
 				background-attachment: scroll,							scroll,							scroll;
 				background-image: url("images/top-1600.svg"), url("images/overlay.png"), url("../../images/header.jpg");
-				background-size: contain;,					auto,							cover;
+				background-size: cover;
 				padding: 6em 0 12em 0;
 			}
 
@@ -3210,7 +3211,7 @@ input, select, textarea {
 
 			#header {
 				background-image: url("images/top-1280.svg"), url("images/overlay.png"), url("../../images/header.jpg");
-				background-size: contain;,						auto,							cover;
+				background-size: contain;
 				padding: 3em 0 7em 0;
 			}
 
